@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2DEPTH 메뉴</title>
+  <style>
+      .cls001 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .cls001 > li {
+          width: 120px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid black;
+          background: yellow;
+          float: left;
+          text-align: center;
+      }
+
+      .cls001 li ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+
+      .cls001 li ul li {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid black;
+        background: yellow;
+        text-align: center;
+        display: none;
+      }
+
+      .cls001 li:hover ul li {
+          display: block;
+      }
+  </style>
+</head>
+<body>
+    <ul class="cls001">
+      <li>CSS
+          <ul>
+            <li>CSS1</li>
+            <li>CSS2</li>
+            <li>CSS3</li>
+          </ul>
+      </li>
+      <li>jQuery</li>
+      <li>HTML</li>
+      <li>Javascript</li>
+    </ul>
+</body>
+</html>

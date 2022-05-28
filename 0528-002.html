@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어쿼리</title>
+  <style>
+      body {
+        margin: 0;
+      }
+    #wrapper {
+      width: 1000px;
+      height: 600px;
+      background: #8ac007;
+      margin: 0 auto;
+    }
+
+    p {
+        text-align: center;
+        font-size: 120px;
+        color: white;
+        padding-top: 120px;
+        margin: 0;
+    }
+
+    @media(max-width: 780px) {
+        #wrapper {
+          width: 600px;
+          background: red;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    @media(max-width: 500px) {
+      #wrapper {
+        width: 100%;
+        background: orange;
+      }
+    }
+    
+    p {
+      color: black;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+    <div id="wrapper">
+      <p>HTML</p>
+    </div>
+</body>
+</html>
